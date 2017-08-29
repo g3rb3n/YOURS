@@ -197,24 +197,10 @@ if (count($output) > 1)
 		if ($pos)
 		{
 			$node = explode(",", $line);
-			for ($i = 0; $i < count($node); $i++)
-			{
-				switch ($i)
-				{
-				case 0:
-					$lat = trim($node[0], "\n\r0");
-					break;
-				case 1:
-					$lon = trim($node[1], "\n\r0");
-					break;
-				case 2:
-					$junction = trim($node[2], "\n\r0");
-					break;
-				case 3:
-					$name = trim($node[3], "\n\r0");
-					break;
-				}
-			}
+      $lat = trim($node[0], "\n\r0");
+      $lon = trim($node[1], "\n\r0");
+      $junction = trim($node[2], "\n\r0");
+      $name = trim($node[3], "\n\r0");
 			$element = array("lat" => $lat, "lon" => $lon, "junction" => $junction, "name" => $name);
 			array_push($elements, $element);
 			

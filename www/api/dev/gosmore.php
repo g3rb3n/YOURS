@@ -7,7 +7,6 @@
 
 $maxAttempts = 25; //5
 $maxInstances = 4;
-$admin_email = 'osm@na1400.info';
 $ulimit = 30;
 $maxDistanceKm = 1000;
 
@@ -197,7 +196,7 @@ if (count($output) > 1)
 		$pos = strripos($line, ',');
 		if ($pos)
 		{
-			$node = split(",", $line);
+			$node = explode(",", $line);
 			for ($i = 0; $i < count($node); $i++)
 			{
 				switch ($i)
@@ -314,7 +313,7 @@ function getProcesses() {
 	foreach ($ps as $row => $process)
 	{
 		$properties = array();
-		$properties = split(" ", $process);
+		$properties = explode(" ", $process);
 		
 		foreach ($properties as $item => $property)
 		{

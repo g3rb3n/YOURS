@@ -2,11 +2,11 @@
 /* Copyright (c) 2009, L. IJsselstein and others
   Yournavigation.org All rights reserved.
  */
- 
+
+ include 'settings.inc';
+
 $maxAttempts = 25; //5
 $maxInstances = 4;
-$www_dir = '/home/lambertus/public_html/yours';
-$yours_dir = '/home/lambertus/yours';
 $admin_email = 'osm@na1400.info';
 $ulimit = 30;
 $maxDistanceKm = 1000;

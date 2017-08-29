@@ -1,8 +1,8 @@
 <?php
+include 'settings.inc';
+
 $maxAttempts = 5;
 $maxInstances = 6;
-$www_dir = '/home/pnorman/osm/routing/www';
-$yours_dir = '/home/pnorman/osm/routing/gosmore';
 $ulimit = 30;
 
 $output = "";

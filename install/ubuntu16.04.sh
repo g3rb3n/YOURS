@@ -102,10 +102,6 @@ ln -s elemstyles.xml.routing elemstyles.xml
 ln -s elemstyles.xml.routing genericstyles.xml
 ln -s elemstyles.xml.routing cyclestyles.xml
 
-# Fix replace deprecated split with explode  
-sed -i 's:split:explode:g' /var/www/yours/api/1.0/gosmore.php
-sed -i 's:split:explode:g' /var/www/yours/api/dev/gosmore.php
-
 
 ###########################
 ###########################
